@@ -1,0 +1,14 @@
+links:
+# - name: Portfolio
+#   link: /portfolio/
+# - name: 博客
+#   link: /blog/
+- name: 教程
+  link: /guide/
+- name: 路线图
+  link: /releases/
+- name: 关于
+  link: /about/
+
+
+github: https://github.com/keeponrunning

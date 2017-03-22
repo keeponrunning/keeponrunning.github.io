@@ -1,0 +1,30 @@
+- title: 其他
+  links:
+    - name: Home
+      link: /
+    - name: Portfolio
+      link: /portfolio/
+    - name: Blog
+      link: /blog/
+    - name: About
+      link: /about/
+    - name: Contact
+      link: /contact/
+- title: 联系我们
+  links:
+    - name: Facebook
+      link:
+      social_icon: Facebook
+      new_window: true
+    - name: Twitter
+      link:
+      social_icon: Twitter
+      new_window: true
+    - name: Google+
+      link:
+      social_icon: Google Plus
+      new_window: true
+    - name: LinkedIn
+      link:
+      social_icon: LinkedIn
+      new_window: true

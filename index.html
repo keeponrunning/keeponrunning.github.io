@@ -1,0 +1,42 @@
+---
+---
+
+<section class="hero diagonal">
+	<div class="container">
+		<h2 class="editable">动态引擎</h2>
+        <p class="subtext editable">对前端多年动态化问题实战的思考与实践，基于手淘weex，规则引擎drools，研发app动态化技术中间件产品, 适用于app快速增量更新，灰度发布等移动互联网前端场景解决方案</p>
+		<p><a class="button alt button-sp" href="{{site.social.github}}" target="_black">关注</a> <a class="button alt" href="{{ site.baseurl }}/contact/">联系我们</a></p>
+	</div>
+</section>
+
+<section class="diagonal patterned" style="padding: 100px 0 20px 0;">
+	<div class="container halves">
+		<div>
+			<ul class="image-list">
+				<li><img src="{{ site.baseurl }}/images/modal.png" width="400"></li>
+			</ul>
+		</div>
+		<div>
+			<h3 class="editable">轻量、高效</h3>
+			<p class="editable">Next Step 不仅提供动态化解决方案，同时包含大部分常用native组件或模块。</p>
+		</div>
+	</div>
+</section>
+
+<section class="diagonal alternate">
+	<div class="container halves">
+		<div>
+			<h3 class="editable">Show me the code</h3>
+			<!-- <p class="editable">We take pride in our previous work and our happy customers. We cater to any sector to boost business and increase exposure.</p> -->
+			<p class="editable"><a href="{{ site.baseurl }}/portfolio/">View Full Portfolio &rarr;</a></p>
+		</div>
+		<div>
+			<ul class="image-grid">
+				{% for client in site.clients limit: 4 %}
+					<li><a href="{{ site.baseurl }}{{ client.url }}"><img src="{% include relative-src.html src=client.image_path %}"></a></li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+</section>
+

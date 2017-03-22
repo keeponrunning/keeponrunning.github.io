@@ -1,0 +1,100 @@
+title: Next Step
+# url: "https://teal-worm.cloudvent.net"
+# baseurl:
+# google_analytics_key:
+# google_maps_javascript_api_key:
+# disqus_shortname:
+
+# 教程设置
+show_full_navigation: true
+
+# Default description in social shares for the jekyll-seo-tag gem
+description: Jekyll template with example content for a web agency.
+
+# Author details for the jekyll-seo-tag gem
+author:
+  name:
+  email:
+  twitter: # twitter username without the @ symbol
+
+# Social details for the jekyll-seo-tag gem
+social:
+  name: Next Step
+  github: https://github.com/keeponrunning
+
+collections:
+  staff_members:
+    output: false
+  clients:
+    output: true
+# 教程设置
+  docs:
+    output: true
+# 路线图
+  releases:
+    output: true
+
+paginate: 10
+paginate_path: "/blog/:num/"
+permalink: pretty
+
+jekyll-archives:
+  enabled:
+    - "categories"
+
+gems:
+  - "jekyll-feed"
+  - "jekyll-seo-tag"
+  - "jekyll-paginate"
+  - "jekyll-archives"
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "clients"
+    values:
+      layout: "client"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  - scope:
+      path: "index.html"
+      type: "pages"
+    values:
+      layout: "default"
+# 教程设置
+  - scope:
+      path: ""
+      type: "docs"
+    values:
+      layout: "guide"
+  - scope:
+      path: "guide.html"
+      type: "pages"
+    values:
+      layout: "guide"
+  - scope:
+      path: "search.html"
+      type: "pages"
+    values:
+      layout: "guide"
+# -----------
+# CloudCannon
+
+social_icons:
+  - Facebook
+  - Google Plus
+  - Instagram
+  - LinkedIn
+  - Pinterest
+  - Tumblr
+  - Twitter
+  - YouTube
+  - RSS
