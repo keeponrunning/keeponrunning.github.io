@@ -2,6 +2,7 @@
 title: secrityinput
 category: Components
 order: 1
+status: dev
 ---
 
 安全键盘组件的实现

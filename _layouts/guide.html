@@ -70,7 +70,9 @@
                   <a href="{{ site.baseurl }}{{ items.first.url }}">{{ group.name }}</a>
                   <ul>
                     {% for item in items %}
-                      <li class="nav-item {% if item.url == page.url %}current{% endif %}"><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></li>
+                      {% if item.status != 'dev' %}
+                        <li class="nav-item {% if item.url == page.url %}current{% endif %}"><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></li>
+                      {% endif %}
                     {% endfor %}
                   </ul>
                 </li>
@@ -91,7 +93,13 @@
 
     <section class="main">
       <div class="page-header">
-        <h2>{% if page.category %}{{ page.category }}{% else %}{{ site.title }}{% endif %}-{{ page.title }}</h2>
+        <h2>
+          <!-- {% if page.category %}{{ page.category }}{% else %}{{ site.title }}{% endif %}- -->
+          {{ page.title }}
+          {% if page.status == 'dev' %}
+            <span class="zbadge">开发中</span>
+          {% endif %}
+        </h2>
       </div>
       <article class="content">
         {{ content }}
