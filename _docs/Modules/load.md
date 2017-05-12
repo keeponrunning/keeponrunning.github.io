@@ -68,17 +68,17 @@ Usage
 
 ```javascript
 //引入
-var loadPath = require('@weex-module/load');
+const loadpath = weex.requireModule('load');
 
 //调用资源下载
 var fileUrl = "http://www.jfpal.com/index.js"
-loadPath.getUrlPath(fileUrl, function(res) {
+loadpath.getUrlPath(fileUrl, function(res) {
   nativeLog(res.data) 
   //file:///User/dadasdasd/IMAGEFolder/homeIcon.png
 });
 
 //获取路由文件全路径
-loadPath.getRoutePath('keyStr', function(res) {
+loadpath.getRoutePath('keyStr', function(res) {
   nativeLog(res.data) 
   //file:///User/dadasdasd/JSFolder/index.js
 });

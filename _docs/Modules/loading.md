@@ -69,7 +69,7 @@ Usage
 
 ```javascript
 //引入
-var loading = require('@weex-module/loading');
+const loading = weex.requireModule('loading');
 
 //显示loading
 loading.show('请稍候...', function(res) {

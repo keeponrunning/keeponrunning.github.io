@@ -39,7 +39,7 @@ Usage
 
 ```javascript
 //引入
-var jumpmoudle = require('@weex-module/jump');
+const jumpmoudle = weex.requireModule('jump');
 
 //1.openUrlInWebView
 jumpmoudle.openUrlInWebView("http://www.baidu.com",function(e) {

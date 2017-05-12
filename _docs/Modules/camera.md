@@ -65,7 +65,7 @@ Usage
 
 ```javascript
 //引入
-var module = require('@weex-module/camera');
+const module = weex.requireModule('module');
 
 //拍照
 module.capturePhoto(function(res) {

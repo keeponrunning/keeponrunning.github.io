@@ -84,7 +84,7 @@ Usage
 ```javascript
 
 //引入
-var module = require('@weex-module/transition');
+const module = weex.requireModule('transition');
 
 //打开新页面
 //该对象不可为空，url必传(文件全路径)

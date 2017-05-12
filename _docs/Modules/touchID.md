@@ -56,7 +56,7 @@ Usage
 
 ```javascript
 
-var touchIdModule = require('@weex-module/touchID');
+const touchIdModule = weex.requireModule('touchID');
 
 //获取设备是否支持
 touchIdModule.deviceSupportTouchID(function(res) {

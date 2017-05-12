@@ -123,7 +123,7 @@ Usage
 
 ```javascript
 
-var gestureModule = require('@weex-module/gesture');
+const gestureModule = weex.requireModule('gesture');
 
 //1、设置（开启）手势密码
 gestureModule.setGesture('15121178175', function(res) {

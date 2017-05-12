@@ -41,7 +41,7 @@ Usage
 
 ```javascript
 //引入
-var metamodule = require('@weex-module/meta');
+const metamodule = weex.requireModule('meta');
 
 //调用api
 metamodule.getSourceMeta('home', function(res) {

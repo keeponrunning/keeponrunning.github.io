@@ -55,7 +55,7 @@ Usage
 
 ```javascript
 //引入
-var module = require('@weex-module/sms');
+const module = weex.requireModule('sms');
 
 //发送短信
 module.sendSMS("发送的内容", function(res) {

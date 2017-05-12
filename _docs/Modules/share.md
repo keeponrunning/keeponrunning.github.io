@@ -63,7 +63,7 @@ Usage
 
 ```javascript
 //引入
-var module = require('@weex-module/share');
+const module = weex.requireModule('share');
 
 //分享文本
 module.share("分享的内容"，function(res) {

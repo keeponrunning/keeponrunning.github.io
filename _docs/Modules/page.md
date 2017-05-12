@@ -63,7 +63,7 @@ Usage
 
 ```javascript
 //引入
-var ddrefresh = require('@weex-module/page');
+const ddrefresh = weex.requireModule('page');
 
 //刷新
 ddrefresh.refreshPage()

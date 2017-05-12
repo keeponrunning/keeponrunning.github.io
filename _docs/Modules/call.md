@@ -33,7 +33,7 @@ Usage
 
 ```javascript
 //引入
-var module = require('@weex-module/call');
+const module = weex.requireModule('module');
 
 //拨打电话
 module.callTel("10086");

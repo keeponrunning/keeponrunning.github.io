@@ -53,7 +53,7 @@ Usage
 
 ```javascript
 //引入
-var module = require('@weex-module/contacts');
+const module = weex.requireModule('contacts');
 
 module.pickContact(function(res) {
   nativeLog(res.data)

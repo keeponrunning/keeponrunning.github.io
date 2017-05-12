@@ -49,7 +49,7 @@ Usage
 
 ```javascript
 //引入
-var location = require('@weex-module/location');
+const location = weex.requireModule('location');
 
 location.getLocation(function(res) {
   nativeLog(res.data)
